@@ -1,0 +1,32 @@
+# MiMo Airdrop Hunter Configuration
+# Copy to config.yaml and fill in your values
+
+mimo:
+  api_key: "your-mimo-api-key"
+  model: "MiMo-V2.5-Reasoning"
+  base_url: "https://api.xiaomimimo.com/v1"
+
+chains:
+  - name: "ethereum"
+    rpc: "https://eth.llamarpc.com"
+    explorer: "https://api.etherscan.io/api?apikey=YOUR_KEY"
+  - name: "base"
+    rpc: "https://mainnet.base.org"
+  - name: "arbitrum"
+    rpc: "https://arb1.arbitrum.io/rpc"
+  - name: "optimism"
+    rpc: "https://mainnet.optimism.io"
+  - name: "bsc"
+    rpc: "https://bsc-dataseed.binance.org"
+
+wallets:
+  - address: "0xYourWalletAddress"
+    label: "main"
+
+telegram:
+  bot_token: "your-telegram-bot-token"
+  chat_id: "your-chat-id"
+
+scheduler:
+  scan_interval_minutes: 30
+  deep_scan_hour: 2  # UTC
